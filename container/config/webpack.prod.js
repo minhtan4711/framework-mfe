@@ -9,6 +9,7 @@ const prodConfig = {
     mode: 'production',
     output: {
         filename: '[name].[contenthash].js',
+        publicPath: '/container/latest/', // this is the path where the container will look for the remoteEntry.js file
     },
     plugins: [
         new ModuleFederationPlugin({
